@@ -1,0 +1,39 @@
+
+  .sidebar {
+    width: 200px; /* Reduced sidebar width */
+    
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    
+  }
+  
+  .sidebar a {
+    display: block;
+    margin-bottom: 10px; /* Add margin between links */
+    text-decoration: none;
+    color: #333; /* Darker text color */
+    font-size: 18px; /* Larger font size */
+    transition: color 0.3s; /* Smooth color transition */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    background-color: rgb(110, 85, 209);
+  }
+  
+  .sidebar a:hover,
+  .sidebar a:active {
+    color: #fff; /* Change text color on hover */
+    background-color: #555; /* Darker background color on hover */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px; /* Adjust margin to accommodate sidebar width */ 
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  

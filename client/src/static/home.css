@@ -1,0 +1,105 @@
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background-attachment: fixed; /* Fix the background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%; /* Adjusted width to 90% of the viewport width */
+  max-width: 500px; /* Added max-width for better responsiveness */
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(3, 1, 58, 0.2);
+  backdrop-filter: blur(9px);
+  color: #033d5d;
+  border-radius: 14px;
+  padding: 30px 40px;
+  box-shadow: 0 0 30px rgba(42, 11, 216, 0.205); /* Shadow effect */
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9935f1;
+  color: #f8f6f6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.input-box a:hover {
+  background-color: #08bdd5;
+}
+
+.input-box a::before,
+.input-box a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(-45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: transform 0.4s;
+}
+
+.input-box a::before {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.input-box a::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.input-box a:hover::before {
+  transform: scaleX(1);
+}
+
+.input-box a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 80%; /* Adjusted width for smaller screens */
+    padding: 20px; /* Reduced padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    width: 90%; /* Adjusted width for even smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduced font size for smaller screens */
+    margin-bottom: 20px; /* Reduced margin bottom */
+  }
+
+  .input-box a {
+    font-size: 14px; /* Reduced font size for smaller screens */
+  }
+}

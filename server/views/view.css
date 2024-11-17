@@ -1,0 +1,43 @@
+/* Style for password input */
+.password-input {
+    margin-bottom: 20px; /* Add spacing between inputs */
+  }
+  
+  .password-input input[type="password"] {
+    width: 100%; /* Make input full width */
+    padding: 10px; /* Add padding to input */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  /* Style for confirm password input */
+  .confirm-password-input {
+    margin-bottom: 20px; /* Add spacing between inputs */
+  }
+  
+  .confirm-password-input input[type="password"] {
+    width: 100%; /* Make input full width */
+    padding: 10px; /* Add padding to input */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  /* Style for submit button */
+  .submit-button {
+    text-align: center; /* Align button to center */
+  }
+  
+  .submit-button input[type="submit"] {
+    padding: 10px 20px; /* Add padding to button */
+    background-color: #512da8; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  .submit-button input[type="submit"]:hover {
+    background-color: #311b92; /* Change background color on hover */
+  }
+  

@@ -1,0 +1,92 @@
+/*usersignupcss*/
+.user-signup-container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(81, 65, 187, 0.84);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    padding: 0 40px;
+  }
+  
+  
+  
+  .user-signup-container h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3e0d6b;
+  }
+  .user-signup-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Place it on the right side */
+    bottom: 0;
+    width: 35%; /* Adjust width as needed */
+    background-color: #512da8; /* Blue color */
+    border-radius: 0px 0 0 580px;;
+   
+  
+  }
+  .input-wrapper {
+    font-size: 4px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px ;
+    width: 450px;
+}
+
+.links-wrapper {
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(9px);
+  color: #b05a14;
+  padding: 30px 40px;
+  margin: 20px ;
+  line-height: 30px;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #a47ce4;
+}
+
+.input-wrapper input {
+    background-color: #f9f7f7;
+    border:none;
+    margin: 10px 0;
+    padding: 10px 35px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 45%;
+    outline:none;
+    display: inline-block;
+    border-bottom: 2px solid #3e0d6b;
+}
+/* Add this CSS code to your userlogin.css file */
+
+.button button {
+  background-color: #512da8; /* Default button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  order: 2;
+}
+
+.button button:hover {
+  background-color: #311b92; /* Button color on hover */
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+  

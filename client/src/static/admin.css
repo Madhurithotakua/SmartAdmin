@@ -1,0 +1,45 @@
+.admin-container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(81, 65, 187, 0.84);
+    position: relative;
+    overflow: hidden;
+    width: 468px;
+    max-width: 100%;
+    min-height: 450px;
+    padding: 0 100px;
+  }
+  
+  .admin-container h2 {
+  font-size: 25px;
+  margin-bottom: 30px 20px;
+  color: #3e0d6b;
+  }
+  
+  .delete-btn, .approve-btn {
+    background-color: #26078b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .approve-btn {
+    background-color: #1083c1;
+  }
+  
+  li {
+    padding-top: 20px; /* Padding applied to the top of each list item */
+  }
+  
+  .admin-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Place it at the bottom */
+    left: 0; /* Align it to the left side */
+    width: 100%; /* Extend the width across the entire container */
+    height: 30%; /* Adjust height as needed */
+    background-color: #512da8; /* Blue color */
+    border-radius: 50% 50% 0 0;  /* Adjust border-radius for shape */
+  }
